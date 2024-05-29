@@ -4,33 +4,28 @@ import './project.css';
 const Projects = () => {
   const projectList = [
     {
-      title: 'Project One',
-      description: 'This is a brief description of Project One. It involves web design and development.',
-      link: 'https://www.example.com/project-one',
-      image: 'src/assets/portfolio-5.png' // Replace with your image URL
+      title: 'PetClinicHub',
+      description: 'Our pet clinic hub provides information about the nearest pet clinics, emergency services, vaccination schedules, and more. We aim to make it easy for pet owners to access essential services for their furry friends..',
+      link: 'https://radiant-raindrop-2d58f2.netlify.app/#team',
+      
     },
     {
-      title: 'Project Two',
-      description: 'This is a brief description of Project Two. It focuses on cloud computing solutions.',
-      link: 'https://www.example.com/project-two',
+      title: 'Design Birthday card',
+      description: 'This is an interactive birthday card design created with HTML, CSS, and JavaScript, featuring animated balloons and heartfelt messages for a personalized birthday greeting. ',
+      link: 'https://mahuyaghosh396.github.io/birthday_card/',
        // Replace with your image URL
     },
-    {
-      title: 'Project Three',
-      description: 'This is a brief description of Project Three. It covers cybersecurity topics.',
-      link: 'https://www.example.com/project-three',
-  
-    }
+    
   ];
 
   return (
     <section id="project"> 
     <div className="projects-container">
-      <h2 className="projects-title">My Projects & Internship Experience</h2>
+      <h2 className="projects-title">My Projects</h2>
       <div className="projects-grid">
         {projectList.map((project, index) => (
           <div className="project-item" key={index}>
-            <img src={project.image} alt={project.title} className="project-image" />
+           
             <h3 className="project-title">{project.title}</h3>
             <p className="project-description">{project.description}</p>
             <a href={project.link} className="project-link" target="_blank" rel="noopener noreferrer">
