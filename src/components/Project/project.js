@@ -26,7 +26,9 @@ const Projects = () => {
         {projectList.map((project, index) => (
           <div className="project-item" key={index}>
            
-            <h3 className="project-title">{project.title}</h3>
+           <h3 className="project-title" style={{ color: "black" }}>{project.title}</h3>
+
+
             <p className="project-description">{project.description}</p>
             <a href={project.link} className="project-link" target="_blank" rel="noopener noreferrer">
               View Project
