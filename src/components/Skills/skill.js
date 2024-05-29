@@ -9,7 +9,7 @@ import cyberImg from '../../assets/cyber.png';
 function Skill() {
   return (
    <section id='skill'>
-    <span className='skillTitle'>What I interested</span>
+    <span className='skillTitle'>Areas Of Interest</span>
     <span className='skillDesc'>I am passionate about web design, cloud computing, and cybersecurity. 
     With a keen eye for detail and a drive for innovation, I enjoy creating visually stunning and user-friendly websites.
      My expertise in cloud technologies allows me to build scalable and efficient solutions, 
@@ -20,21 +20,21 @@ function Skill() {
         <img src={webDesign} alt='webDesign' className='skillBarImg'/>
         <div className='skillBarText'>
             <h2>Web Design</h2>
-            <p>you can write your own content</p>
+            <p>HTML, CSS, JavaScript, React.js</p>
         </div>
     </div>
     <div className='skillBar'>
         <img src={cloudImg} alt='cloudImg' className='skillBarImg'/>
         <div className='skillBarText'>
             <h2>Cloud Computing</h2>
-            <p>you can write your own content</p>
+            <p>Google Cloud Platform (GCP), Amazon Web Services (AWS)</p>
         </div>
     </div>
     <div className='skillBar'>
         <img src={cyberImg} alt='cyberImg' className='skillBarImg'/>
         <div className='skillBarText'>
             <h2>Cyber Security</h2>
-            <p>you can write your own content</p>
+            <p>Network security, Encryption, Vulnerability assessment</p>
         </div>
     </div>
 </div>

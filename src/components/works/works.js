@@ -11,9 +11,9 @@ import { useState } from 'react';
 
 const Works = () => {
   const initialSkills = [
-    { name: 'Cyber Security', description: 'Cybersecurity', image: cybersecurity},
+    { name: 'Cyber Security', image: cybersecurity},
 
-    { name: 'Programming', description: 'JAVA, HTML, CSS, React, MySql', image: prg},
+    { name: 'Programming', image: prg},
     // Add more initial skills and certificates as needed
   ];
 
@@ -26,7 +26,7 @@ const Works = () => {
     
     if (!showMore) {
       // If showMore is false, add additional images to the skills array
-      const newSkill = { name: 'Cloud Computing', description: 'VMware, AWS, Google Cloud', image: awsImg };
+      const newSkill = { name: 'Cloud Computing', image: awsImg };
       setSkills([...skills, newSkill]);
     } else {
       // If showMore is true, reset the skills array to initialSkills
@@ -50,7 +50,7 @@ const Works = () => {
         {skills.map((skill, index) => (
           <div className="work-item" key={index}>
             <h3>{skill.name}</h3>
-            <p>{skill.description}</p>
+            
             <img
               src={skill.image}
               alt={`${skill.name} certificate`}
